@@ -1,0 +1,27 @@
+{
+  "WorkableConf": {
+    "WorkableID(str)": {
+      "ReWrInterface": "ClassName(str)",
+      "WorkInterface": "ClassName(str)",
+      "ArgsReWr": {
+        "ParamName(str)" : "ArgumentValue(str)"
+      },
+      "ArgsWork": {
+        "ParamName(str)" : "ArgumentValue(str)"
+      }
+    }
+  },
+  "WorkerConf": {
+    // Start and End are reserved!
+    "WorkerID(str)": {
+      "ProcessCnt": "Number(int)",
+      "GroupCnt": "Number(int)",
+      "WorkableIn": "WorkableID(str)",
+      "WorkableOut": "WorkableID(str)",
+      "WorkerIn": ["WorkerID(str)"],
+      "WorkerOut": ["WorkerID(str)"],
+      "WorkInTypes": ["ContainerType(str)"],
+      "WorkOutTypes": ["ContainerType(str)"]
+    }
+  }
+}
