@@ -37,11 +37,11 @@ _PValT: Final = TypeVar('_PValT', int, float)
 class _SyncCValue(Protocol[_PValT]):
     @property
     def value(self) -> _PValT:
-        ...
+        pass
 
     @value.setter
     def value(self, value: _PValT) -> None:
-        ...
+        pass
 
 
 def _create_int_value(ctx: multiprocessing.context.SpawnContext,
